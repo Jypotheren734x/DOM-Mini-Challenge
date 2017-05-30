@@ -3,13 +3,50 @@
     <head>
         <meta charset="UTF-8">
         <title>DOM</title>
+        <link rel="stylesheet" href="css/stylesheet.css">
     </head>
     <body>
+        <h1 onmouseover="donthover()">DON'T HOVER OVER ME!</h1>
         <button onclick="respond()">Player 1</button>
         <button onclick="respond()">Player 2</button>
         <p id="text"></p>
-        <h1 onmouseover="donthover()">DON'T HOVER OVER ME!</h1>
         <h1 id ='key' onkeypress="setKey()"></h1>
+        <div id="login"><button id='Loginbtn' onclick="show_modal()">Login</button></div>
+        <div id="openModal" class="modalDialog">
+            <div class="wrapper">
+                <div class="container">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h1>Login/Register</h1>
+                    <form class="form">
+                        <input placeholder="Username" id='username'>
+                        <input type="password" placeholder="Password" id='password'>
+                        <button type="submit" id="login-button" onclick="login()">Login</button>
+                    </form>
+                </div>
+                <ul class="bg-bubbles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
         <script src="js/main.js"></script>
     </body>
 </html>

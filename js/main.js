@@ -27,3 +27,16 @@ function setKey(e) {
 }
 
 // Problem 4
+function show_modal() {
+    window.location.href = '#openModal';
+}
+
+function login() {
+    var pass = document.getElementById('password').value;
+    var user = document.getElementById('username').value;
+    if(pass === "12345678" && user.length < 14){
+        document.getElementById('login').innerHTML = "Congrats on knowing your username and password!";
+    }else{
+        alert("Incorrect username or password");
+    }
+}
