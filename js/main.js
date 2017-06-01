@@ -28,6 +28,7 @@ function setKey(e) {
 
 // Problem 4
 document.getElementById('Loginbtn').addEventListener("click", show_modal);
+document.getElementById('login-button').addEventListener("click", login);
 function show_modal() {
     window.location.href = '#openModal';
 }
