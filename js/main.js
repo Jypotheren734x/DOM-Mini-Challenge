@@ -2,6 +2,8 @@
  * Created by komar on 5/30/2017.
  */
 var player = true;
+document.getElementById('P1').addEventListener('click', respond);
+document.getElementById('P2').addEventListener('click', respond);
 function respond() {
     switch(player){
         case true:
@@ -16,6 +18,7 @@ function respond() {
 }
 
 // Problem 2
+document.getElementById('dont_hover').addEventListener('mouseover',donthover);
 function donthover() {
     alert('Hey, I told you not to hover over me!');
 }
