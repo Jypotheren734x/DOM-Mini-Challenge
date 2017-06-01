@@ -27,10 +27,10 @@ function setKey(e) {
 }
 
 // Problem 4
+document.getElementById('Loginbtn').addEventListener("click", show_modal);
 function show_modal() {
     window.location.href = '#openModal';
 }
-
 function login() {
     var pass = document.getElementById('password').value;
     var user = document.getElementById('username').value;
